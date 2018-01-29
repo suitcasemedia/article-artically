@@ -1,0 +1,21 @@
+.meta-strip{
+    color: #626262 ;
+    padding: 20px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #E6EEF0 ;
+
+    &__subject{
+        float: left;
+        font-weight: bold;
+        color:#000;
+        text-align: center;
+
+    }
+
+    &__auth-date{
+        float: right;
+        text-align: center;
+
+    }
+
+}

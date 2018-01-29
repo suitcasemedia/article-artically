@@ -1,0 +1,25 @@
+{
+  "name": "chicken-recipe",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "lodash": "^4.17.4",
+    "node-sass-chokidar": "0.0.3",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-html-parser": "^2.0.2",
+    "react-scripts": "1.0.17",
+    "shx": "^0.2.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "prebuild-css": "shx cp -R node_modules/bootstrap/scss src/bootstrap",
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "heroku-postbuild": "cd client && yarn --production=false && yarn run build"
+  }
+}

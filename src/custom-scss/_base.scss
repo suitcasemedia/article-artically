@@ -1,0 +1,49 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    font-size: 16px;
+    background: #E6EEF0 ;
+}
+
+h1{
+    font-size: 44px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 36px;
+    margin-bottom: 24px;
+}
+
+.top-title{
+    text-align: center;
+    padding: 36px;
+}
+
+.lead {
+    font-size: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    font-family: 'UtopiaStd-Regular, Times New Roman', Times, serif;
+   color: #2C2C2C;
+}
+p.first{
+
+    margin-top: 36px;
+    &::first-letter{
+        color: #212020;
+        font-size: 57px;
+        line-height: 40px;
+        margin-right:5px;
+        float: left;
+        
+
+    }
+}
+
+.inner-container{
+    max-width: 80%;
+    margin: auto;
+}
